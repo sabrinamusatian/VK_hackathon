@@ -15,38 +15,44 @@ public class MainActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        Button run = (Button) findViewById(R.id.run);
+
+        setTitle("Эрмитаж");
+
+        Handler.setRoutes();
+
+
+        Button run = (Button) findViewById(R.id.buttonExcursion);
         run.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
-                runAR();
+                startActivity(new Intent(MainActivity.this, SelectActivity.class));
             }
         });
-        Button map = (Button) findViewById(R.id.map_button);
-        map.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View v) {
-                runMap();
-            }
-        });
-
-        Button test = (Button) findViewById(R.id.buttonTest);
-        Button next = (Button) findViewById(R.id.buttonTestNext);
-        tv = (TextView) findViewById(R.id.textTest);
-
-        test.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View v) {
-                Handler.getColor("Rembrant");
-            }
-        });
-
-        next.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View v) {
-                Handler.getColor("Rembrantg");
-            }
-        });
+//        Button map = (Button) findViewById(R.id.map_button);
+//        map.setOnClickListener(new View.OnClickListener(){
+//            @Override
+//            public void onClick(View v) {
+//                runMap();
+//            }
+//        });
+//
+//        Button test = (Button) findViewById(R.id.buttonTest);
+//        Button next = (Button) findViewById(R.id.buttonTestNext);
+//        tv = (TextView) findViewById(R.id.textTest);
+//
+//        test.setOnClickListener(new View.OnClickListener(){
+//            @Override
+//            public void onClick(View v) {
+//                Handler.getColor("Rembrant");
+//            }
+//        });
+//
+//        next.setOnClickListener(new View.OnClickListener(){
+//            @Override
+//            public void onClick(View v) {
+//                Handler.getColor("Rembrantg");
+//            }
+//        });
     }
 
     private void runAR() {
@@ -58,6 +64,6 @@ public class MainActivity extends Activity {
     }
 
     public static void setText(String txt){
-        tv.setText(tv.getText() + "\n"+ txt);
+ //       tv.setText(tv.getText() + "\n"+ txt);
     }
 }

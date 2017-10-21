@@ -83,12 +83,10 @@ public class ParseTask extends AsyncTask<Void, Void, String> {
                     JSONObject json = dataJsonObj.getJSONObject(i);
                     String desc = json.getString("description");
                     // TODO: add route
-                    s += desc;
                     routes.add(new Route(desc));
                 }
 
-
-                MainActivity.setText(s);
+               // Handler.setRoutes(routes);
                 // TODO: add
 
             } catch (JSONException e) {

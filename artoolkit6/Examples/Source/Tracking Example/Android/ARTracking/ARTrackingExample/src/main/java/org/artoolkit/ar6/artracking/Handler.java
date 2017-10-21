@@ -1,5 +1,10 @@
 package org.artoolkit.ar6.artracking;
 
+import org.artoolkit.ar6.artracking.model.Route;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 import java.util.Random;
 
 public class Handler {
@@ -7,6 +12,9 @@ public class Handler {
     private static final int POST_USER_CHOOSE = 1;
     private static final int GET_NEXT_VERTEX = 2;
     private static final int GET_COLOR = 3;
+
+    public static List<Route> routes = new ArrayList<>();
+    private static List<String> names = Arrays.asList("Итальянская живопись", "Голландская живопись", "Древности сибири", "Избранная экскурсия", "Древний Египет");
 
     private static Random random = new Random();
     private static final Integer user_id = Math.abs(random.nextInt());
@@ -30,5 +38,11 @@ public class Handler {
 
     public static void getColor(String name){
         new ParseTask(urlGetColor + name, GET_COLOR).execute();
+    }
+
+    public static void setRoutes(){
+        for (int i = 0; i < names.size(); i++){
+            routes.add(new Route(names.get(i)));
+        }
     }
 }

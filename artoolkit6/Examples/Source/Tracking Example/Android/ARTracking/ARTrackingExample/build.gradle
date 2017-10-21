@@ -41,8 +41,10 @@ dependencies {
     compile project(':AR6J')
     // If you want to develop AR6J and test it with ARTrackingExample you need to un-commend this line and
     // comment-out the line above.
-    compile 'com.android.support:appcompat-v7:25.2.0'
+    compile 'com.android.support:appcompat-v7:25.3.1'
     compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    compile 'com.android.support:recyclerview-v7:25.3.1'
+    compile 'com.android.support:support-v4:25.3.1'
 }
 
 // Task Actions is defined by task type of Copy. To reference a variable within a string, the string has to be delimited by " rather than '.
