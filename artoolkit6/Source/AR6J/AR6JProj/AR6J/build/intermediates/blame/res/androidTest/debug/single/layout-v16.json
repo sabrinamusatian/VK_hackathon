@@ -1,10 +1,13 @@
 [
     {
-        "merged": "/Users/sabrina/Documents/VK_hackathon/artoolkit6/Source/AR6J/AR6JProj/AR6J/build/intermediates/res/merged/androidTest/debug/layout-v16/notification_template_custom_big.xml",
+        "merged": "/Users/sabrina/Documents/VK_hackathonkir/artoolkit6/Source/AR6J/AR6JProj/AR6J/build/intermediates/res/merged/androidTest/debug/layout-v16/notification_template_custom_big.xml",
         "source": "/Users/sabrina/.android/build-cache/6382d95cd6976d56624eea2331add4075dd51018/output/res/layout-v16/notification_template_custom_big.xml"
+<<<<<<< HEAD
     },
     {
         "merged": "/home/kirill/VK_hackathon/VK_hackathon/artoolkit6/Source/AR6J/AR6JProj/AR6J/build/intermediates/res/merged/androidTest/debug/layout-v16/notification_template_custom_big.xml",
         "source": "/home/kirill/.android/build-cache/24a0abd81b8664db18ce13687407b38c38a79bcf/output/res/layout-v16/notification_template_custom_big.xml"
+=======
+>>>>>>> 658ec6212970dfc9dbba2a4af97a0aae6e55c4ed
     }
 ]

@@ -1,6 +1,7 @@
 package org.artoolkit.ar6.artracking;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.Canvas;
@@ -24,7 +25,7 @@ public class map extends Activity {
 
 
 
-        toDraw.drawCircle(x, y, 7, paint);
+        toDraw.drawCircle(x, y, 13, paint);
 
     }
 
@@ -44,32 +45,32 @@ public class map extends Activity {
         Point point3_draw = new Point();
         switch (dir) {
             case 0:
-                point2_draw.x = x - 2;
-                point2_draw.y = y + 3;
+                point2_draw.x = x - 4;
+                point2_draw.y = y + 6;
 
-                point3_draw.x = x + 2;
-                point3_draw.y = y + 3;
+                point3_draw.x = x + 4;
+                point3_draw.y = y + 6;
                 break;
             case 1:
-                point2_draw.x = x - 3;
-                point2_draw.y = y - 2;
+                point2_draw.x = x - 6;
+                point2_draw.y = y - 4;
 
-                point3_draw.x = x - 3;
-                point3_draw.y = y + 2;
+                point3_draw.x = x - 6;
+                point3_draw.y = y + 4;
                 break;
             case 2:
-                point2_draw.x = x - 2;
-                point2_draw.y = y - 3;
+                point2_draw.x = x - 4;
+                point2_draw.y = y - 6;
 
-                point3_draw.x = x + 2;
-                point3_draw.y = y - 3;
+                point3_draw.x = x + 4;
+                point3_draw.y = y - 6;
                 break;
             case 3:
-                point2_draw.x = x + 3;
-                point2_draw.y = y - 2;
+                point2_draw.x = x + 6;
+                point2_draw.y = y - 4;
 
-                point3_draw.x = x + 3;
-                point3_draw.y = y + 2;
+                point3_draw.x = x + 6;
+                point3_draw.y = y + 4;
                 break;
 
         }
@@ -91,16 +92,18 @@ public class map extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        Intent intent = getIntent();
+        int hall = intent.getIntExtra("hall", -1);
         setContentView(R.layout.activity_map);
 
-        setContentView(new ScrollableImage(this));
-
-        BitmapFactory.Options myOptions = new BitmapFactory.Options();
-        myOptions.inDither = true;
-        myOptions.inScaled = false;
-        myOptions.inPreferredConfig = Bitmap.Config.ARGB_8888;// important
-        myOptions.inPurgeable = true;
-        Bitmap img =  BitmapFactory.decodeResource(map.this.getResources(), R.drawable.hermitage, myOptions);
+//        setContentView(new ScrollableImage(this));
+//
+//        BitmapFactory.Options myOptions = new BitmapFactory.Options();
+//        myOptions.inDither = true;
+//        myOptions.inScaled = false;
+//        myOptions.inPreferredConfig = Bitmap.Config.ARGB_8888;// important
+//        myOptions.inPurgeable = true;
+        Bitmap img =  BitmapFactory.decodeResource(map.this.getResources(), R.drawable.hermitage2);
 
         Bitmap workingBitmap = Bitmap.createBitmap(img);
         Bitmap mutableBitmap = workingBitmap.copy(Bitmap.Config.ARGB_8888, true);
@@ -108,23 +111,44 @@ public class map extends Activity {
         Display display = getWindowManager().getDefaultDisplay();
         Point size = new Point();
         display.getSize(size);
-        int width = size.x * 5;
-        int height = size.y;
+        Canvas toDraw = new Canvas(mutableBitmap);
+        if (hall == 1) {
+            drawCircle(400, 105, toDraw);
+            drawCircle(540, 177, toDraw);
 
-        Bitmap scaledBitmap = Bitmap.createScaledBitmap(mutableBitmap, width, height, true);
+            drawTriangle(500, 177, 3, toDraw);
+            drawTriangle(480, 177, 3, toDraw);
+            drawTriangle(460, 177, 3, toDraw);
+            drawTriangle(440, 177, 3, toDraw);
+            drawTriangle(420, 177, 3, toDraw);
+            drawTriangle(400, 177, 0, toDraw);
+            drawTriangle(400, 157, 0, toDraw);
+            drawTriangle(400, 137, 0, toDraw);
+        }
+
+        if (hall == 2) {
+            drawCircle(400, 105, toDraw);
+            drawCircle(160, 105, toDraw);
+
+            drawTriangle(180, 105, 1, toDraw);
+            drawTriangle(200, 105, 1, toDraw);
+            drawTriangle(220, 105, 1, toDraw);
+            drawTriangle(240, 105, 1, toDraw);
+            drawTriangle(260, 105, 1, toDraw);
+            drawTriangle(280, 105, 1, toDraw);
+            drawTriangle(300, 105, 1, toDraw);
+            drawTriangle(320, 105, 1, toDraw);
+            drawTriangle(340, 105, 1, toDraw);
+            drawTriangle(360, 105, 1, toDraw);
+
+        }
 
         //Canvas toDraw = new Canvas(mutableBitmap);
-        Canvas toDraw = new Canvas(scaledBitmap);
-        drawCircle(440, 55, toDraw);
-
-        drawTriangle(400, 55, 0, toDraw);
-        drawTriangle(380, 55, 1, toDraw);
-        drawTriangle(360, 55, 2, toDraw);
-        drawTriangle(340, 55, 3, toDraw);
 
         ImageView imgView = (ImageView) findViewById(R.id.map);
+        imgView.setImageBitmap(img);
         imgView.setAdjustViewBounds(true);
-        imgView.setImageBitmap(scaledBitmap);
+        imgView.setImageBitmap(mutableBitmap);
 
     }
 }

@@ -60,7 +60,9 @@ public class MainActivity extends Activity {
     }
 
     private void runMap() {
-        startActivity(new Intent(MainActivity.this, map.class));
+        Intent temp = new Intent(MainActivity.this, map.class);
+        temp.putExtra("hall", 1);
+        startActivity(temp);
     }
 
     public static void setText(String txt){

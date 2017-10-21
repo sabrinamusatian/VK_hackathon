@@ -1,6 +1,6 @@
 [
     {
-        "outputFile": "/Users/sabrina/Documents/VK_hackathon/artoolkit6/Source/AR6J/AR6JProj/AR6J/build/intermediates/incremental/mergeDebugResources/merged.dir/values-si-rLK/values-si-rLK.xml",
+        "outputFile": "/Users/sabrina/Documents/VK_hackathonkir/artoolkit6/Source/AR6J/AR6JProj/AR6J/build/intermediates/incremental/mergeDebugResources/merged.dir/values-si-rLK/values-si-rLK.xml",
         "map": [
             {
                 "to": {
@@ -402,6 +402,7 @@
                 }
             }
         ]
+<<<<<<< HEAD
     },
     {
         "outputFile": "/home/kirill/VK_hackathon/VK_hackathon/artoolkit6/Source/AR6J/AR6JProj/AR6J/build/intermediates/incremental/mergeDebugResources/merged.dir/values-si-rLK/values-si-rLK.xml",
@@ -806,5 +807,7 @@
                 }
             }
         ]
+=======
+>>>>>>> 658ec6212970dfc9dbba2a4af97a0aae6e55c4ed
     }
 ]

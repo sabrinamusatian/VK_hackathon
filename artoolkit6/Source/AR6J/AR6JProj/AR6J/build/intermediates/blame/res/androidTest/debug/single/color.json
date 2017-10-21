@@ -1,5 +1,6 @@
 [
     {
+<<<<<<< HEAD
         "merged": "/home/kirill/VK_hackathon/VK_hackathon/artoolkit6/Source/AR6J/AR6JProj/AR6J/build/intermediates/res/merged/androidTest/debug/color/abc_search_url_text.xml",
         "source": "/home/kirill/.android/build-cache/24a0abd81b8664db18ce13687407b38c38a79bcf/output/res/color/abc_search_url_text.xml"
     },
@@ -46,12 +47,29 @@
     {
         "merged": "/home/kirill/VK_hackathon/VK_hackathon/artoolkit6/Source/AR6J/AR6JProj/AR6J/build/intermediates/res/merged/androidTest/debug/color/abc_btn_colored_borderless_text_material.xml",
         "source": "/home/kirill/.android/build-cache/24a0abd81b8664db18ce13687407b38c38a79bcf/output/res/color/abc_btn_colored_borderless_text_material.xml"
+=======
+        "merged": "/Users/sabrina/Documents/VK_hackathonkir/artoolkit6/Source/AR6J/AR6JProj/AR6J/build/intermediates/res/merged/androidTest/debug/color/abc_tint_switch_track.xml",
+        "source": "/Users/sabrina/.android/build-cache/6382d95cd6976d56624eea2331add4075dd51018/output/res/color/abc_tint_switch_track.xml"
     },
     {
-        "merged": "/Users/sabrina/Documents/VK_hackathon/artoolkit6/Source/AR6J/AR6JProj/AR6J/build/intermediates/res/merged/androidTest/debug/color/abc_tint_edittext.xml",
+        "merged": "/Users/sabrina/Documents/VK_hackathonkir/artoolkit6/Source/AR6J/AR6JProj/AR6J/build/intermediates/res/merged/androidTest/debug/color/abc_tint_default.xml",
+        "source": "/Users/sabrina/.android/build-cache/6382d95cd6976d56624eea2331add4075dd51018/output/res/color/abc_tint_default.xml"
+    },
+    {
+        "merged": "/Users/sabrina/Documents/VK_hackathonkir/artoolkit6/Source/AR6J/AR6JProj/AR6J/build/intermediates/res/merged/androidTest/debug/color/switch_thumb_material_light.xml",
+        "source": "/Users/sabrina/.android/build-cache/6382d95cd6976d56624eea2331add4075dd51018/output/res/color/switch_thumb_material_light.xml"
+    },
+    {
+        "merged": "/Users/sabrina/Documents/VK_hackathonkir/artoolkit6/Source/AR6J/AR6JProj/AR6J/build/intermediates/res/merged/androidTest/debug/color/abc_tint_btn_checkable.xml",
+        "source": "/Users/sabrina/.android/build-cache/6382d95cd6976d56624eea2331add4075dd51018/output/res/color/abc_tint_btn_checkable.xml"
+>>>>>>> 658ec6212970dfc9dbba2a4af97a0aae6e55c4ed
+    },
+    {
+        "merged": "/Users/sabrina/Documents/VK_hackathonkir/artoolkit6/Source/AR6J/AR6JProj/AR6J/build/intermediates/res/merged/androidTest/debug/color/abc_tint_edittext.xml",
         "source": "/Users/sabrina/.android/build-cache/6382d95cd6976d56624eea2331add4075dd51018/output/res/color/abc_tint_edittext.xml"
     },
     {
+<<<<<<< HEAD
         "merged": "/home/kirill/VK_hackathon/VK_hackathon/artoolkit6/Source/AR6J/AR6JProj/AR6J/build/intermediates/res/merged/androidTest/debug/color/abc_hint_foreground_material_light.xml",
         "source": "/home/kirill/.android/build-cache/24a0abd81b8664db18ce13687407b38c38a79bcf/output/res/color/abc_hint_foreground_material_light.xml"
     },
@@ -94,12 +112,33 @@
     {
         "merged": "/home/kirill/VK_hackathon/VK_hackathon/artoolkit6/Source/AR6J/AR6JProj/AR6J/build/intermediates/res/merged/androidTest/debug/color/abc_tint_btn_checkable.xml",
         "source": "/home/kirill/.android/build-cache/24a0abd81b8664db18ce13687407b38c38a79bcf/output/res/color/abc_tint_btn_checkable.xml"
+=======
+        "merged": "/Users/sabrina/Documents/VK_hackathonkir/artoolkit6/Source/AR6J/AR6JProj/AR6J/build/intermediates/res/merged/androidTest/debug/color/abc_hint_foreground_material_light.xml",
+        "source": "/Users/sabrina/.android/build-cache/6382d95cd6976d56624eea2331add4075dd51018/output/res/color/abc_hint_foreground_material_light.xml"
     },
     {
-        "merged": "/Users/sabrina/Documents/VK_hackathon/artoolkit6/Source/AR6J/AR6JProj/AR6J/build/intermediates/res/merged/androidTest/debug/color/abc_secondary_text_material_dark.xml",
+        "merged": "/Users/sabrina/Documents/VK_hackathonkir/artoolkit6/Source/AR6J/AR6JProj/AR6J/build/intermediates/res/merged/androidTest/debug/color/abc_btn_colored_text_material.xml",
+        "source": "/Users/sabrina/.android/build-cache/6382d95cd6976d56624eea2331add4075dd51018/output/res/color/abc_btn_colored_text_material.xml"
+    },
+    {
+        "merged": "/Users/sabrina/Documents/VK_hackathonkir/artoolkit6/Source/AR6J/AR6JProj/AR6J/build/intermediates/res/merged/androidTest/debug/color/abc_primary_text_disable_only_material_dark.xml",
+        "source": "/Users/sabrina/.android/build-cache/6382d95cd6976d56624eea2331add4075dd51018/output/res/color/abc_primary_text_disable_only_material_dark.xml"
+    },
+    {
+        "merged": "/Users/sabrina/Documents/VK_hackathonkir/artoolkit6/Source/AR6J/AR6JProj/AR6J/build/intermediates/res/merged/androidTest/debug/color/abc_primary_text_disable_only_material_light.xml",
+        "source": "/Users/sabrina/.android/build-cache/6382d95cd6976d56624eea2331add4075dd51018/output/res/color/abc_primary_text_disable_only_material_light.xml"
+    },
+    {
+        "merged": "/Users/sabrina/Documents/VK_hackathonkir/artoolkit6/Source/AR6J/AR6JProj/AR6J/build/intermediates/res/merged/androidTest/debug/color/abc_tint_spinner.xml",
+        "source": "/Users/sabrina/.android/build-cache/6382d95cd6976d56624eea2331add4075dd51018/output/res/color/abc_tint_spinner.xml"
+>>>>>>> 658ec6212970dfc9dbba2a4af97a0aae6e55c4ed
+    },
+    {
+        "merged": "/Users/sabrina/Documents/VK_hackathonkir/artoolkit6/Source/AR6J/AR6JProj/AR6J/build/intermediates/res/merged/androidTest/debug/color/abc_secondary_text_material_dark.xml",
         "source": "/Users/sabrina/.android/build-cache/6382d95cd6976d56624eea2331add4075dd51018/output/res/color/abc_secondary_text_material_dark.xml"
     },
     {
+<<<<<<< HEAD
         "merged": "/home/kirill/VK_hackathon/VK_hackathon/artoolkit6/Source/AR6J/AR6JProj/AR6J/build/intermediates/res/merged/androidTest/debug/color/abc_hint_foreground_material_dark.xml",
         "source": "/home/kirill/.android/build-cache/24a0abd81b8664db18ce13687407b38c38a79bcf/output/res/color/abc_hint_foreground_material_dark.xml"
     },
@@ -114,24 +153,33 @@
     {
         "merged": "/Users/sabrina/Documents/VK_hackathon/artoolkit6/Source/AR6J/AR6JProj/AR6J/build/intermediates/res/merged/androidTest/debug/color/abc_primary_text_disable_only_material_dark.xml",
         "source": "/Users/sabrina/.android/build-cache/6382d95cd6976d56624eea2331add4075dd51018/output/res/color/abc_primary_text_disable_only_material_dark.xml"
-    },
-    {
-        "merged": "/Users/sabrina/Documents/VK_hackathon/artoolkit6/Source/AR6J/AR6JProj/AR6J/build/intermediates/res/merged/androidTest/debug/color/abc_btn_colored_borderless_text_material.xml",
+=======
+        "merged": "/Users/sabrina/Documents/VK_hackathonkir/artoolkit6/Source/AR6J/AR6JProj/AR6J/build/intermediates/res/merged/androidTest/debug/color/abc_btn_colored_borderless_text_material.xml",
         "source": "/Users/sabrina/.android/build-cache/6382d95cd6976d56624eea2331add4075dd51018/output/res/color/abc_btn_colored_borderless_text_material.xml"
     },
     {
-        "merged": "/Users/sabrina/Documents/VK_hackathon/artoolkit6/Source/AR6J/AR6JProj/AR6J/build/intermediates/res/merged/androidTest/debug/color/switch_thumb_material_light.xml",
-        "source": "/Users/sabrina/.android/build-cache/6382d95cd6976d56624eea2331add4075dd51018/output/res/color/switch_thumb_material_light.xml"
+        "merged": "/Users/sabrina/Documents/VK_hackathonkir/artoolkit6/Source/AR6J/AR6JProj/AR6J/build/intermediates/res/merged/androidTest/debug/color/abc_primary_text_material_dark.xml",
+        "source": "/Users/sabrina/.android/build-cache/6382d95cd6976d56624eea2331add4075dd51018/output/res/color/abc_primary_text_material_dark.xml"
+>>>>>>> 658ec6212970dfc9dbba2a4af97a0aae6e55c4ed
     },
     {
-        "merged": "/Users/sabrina/Documents/VK_hackathon/artoolkit6/Source/AR6J/AR6JProj/AR6J/build/intermediates/res/merged/androidTest/debug/color/abc_primary_text_disable_only_material_light.xml",
-        "source": "/Users/sabrina/.android/build-cache/6382d95cd6976d56624eea2331add4075dd51018/output/res/color/abc_primary_text_disable_only_material_light.xml"
+        "merged": "/Users/sabrina/Documents/VK_hackathonkir/artoolkit6/Source/AR6J/AR6JProj/AR6J/build/intermediates/res/merged/androidTest/debug/color/abc_secondary_text_material_light.xml",
+        "source": "/Users/sabrina/.android/build-cache/6382d95cd6976d56624eea2331add4075dd51018/output/res/color/abc_secondary_text_material_light.xml"
     },
     {
-        "merged": "/Users/sabrina/Documents/VK_hackathon/artoolkit6/Source/AR6J/AR6JProj/AR6J/build/intermediates/res/merged/androidTest/debug/color/abc_search_url_text.xml",
+        "merged": "/Users/sabrina/Documents/VK_hackathonkir/artoolkit6/Source/AR6J/AR6JProj/AR6J/build/intermediates/res/merged/androidTest/debug/color/abc_primary_text_material_light.xml",
+        "source": "/Users/sabrina/.android/build-cache/6382d95cd6976d56624eea2331add4075dd51018/output/res/color/abc_primary_text_material_light.xml"
+    },
+    {
+        "merged": "/Users/sabrina/Documents/VK_hackathonkir/artoolkit6/Source/AR6J/AR6JProj/AR6J/build/intermediates/res/merged/androidTest/debug/color/abc_hint_foreground_material_dark.xml",
+        "source": "/Users/sabrina/.android/build-cache/6382d95cd6976d56624eea2331add4075dd51018/output/res/color/abc_hint_foreground_material_dark.xml"
+    },
+    {
+        "merged": "/Users/sabrina/Documents/VK_hackathonkir/artoolkit6/Source/AR6J/AR6JProj/AR6J/build/intermediates/res/merged/androidTest/debug/color/abc_search_url_text.xml",
         "source": "/Users/sabrina/.android/build-cache/6382d95cd6976d56624eea2331add4075dd51018/output/res/color/abc_search_url_text.xml"
     },
     {
+<<<<<<< HEAD
         "merged": "/Users/sabrina/Documents/VK_hackathon/artoolkit6/Source/AR6J/AR6JProj/AR6J/build/intermediates/res/merged/androidTest/debug/color/abc_tint_seek_thumb.xml",
         "source": "/Users/sabrina/.android/build-cache/6382d95cd6976d56624eea2331add4075dd51018/output/res/color/abc_tint_seek_thumb.xml"
     },
@@ -142,12 +190,17 @@
     {
         "merged": "/home/kirill/VK_hackathon/VK_hackathon/artoolkit6/Source/AR6J/AR6JProj/AR6J/build/intermediates/res/merged/androidTest/debug/color/design_error.xml",
         "source": "/home/kirill/.android/build-cache/5c81f9f70b018396bff979865c67d10b3c7bf4de/output/res/color/design_error.xml"
+=======
+        "merged": "/Users/sabrina/Documents/VK_hackathonkir/artoolkit6/Source/AR6J/AR6JProj/AR6J/build/intermediates/res/merged/androidTest/debug/color/switch_thumb_material_dark.xml",
+        "source": "/Users/sabrina/.android/build-cache/6382d95cd6976d56624eea2331add4075dd51018/output/res/color/switch_thumb_material_dark.xml"
+>>>>>>> 658ec6212970dfc9dbba2a4af97a0aae6e55c4ed
     },
     {
-        "merged": "/Users/sabrina/Documents/VK_hackathon/artoolkit6/Source/AR6J/AR6JProj/AR6J/build/intermediates/res/merged/androidTest/debug/color/abc_tint_switch_thumb.xml",
+        "merged": "/Users/sabrina/Documents/VK_hackathonkir/artoolkit6/Source/AR6J/AR6JProj/AR6J/build/intermediates/res/merged/androidTest/debug/color/abc_tint_switch_thumb.xml",
         "source": "/Users/sabrina/.android/build-cache/6382d95cd6976d56624eea2331add4075dd51018/output/res/color/abc_tint_switch_thumb.xml"
     },
     {
+<<<<<<< HEAD
         "merged": "/home/kirill/VK_hackathon/VK_hackathon/artoolkit6/Source/AR6J/AR6JProj/AR6J/build/intermediates/res/merged/androidTest/debug/color/abc_secondary_text_material_light.xml",
         "source": "/home/kirill/.android/build-cache/24a0abd81b8664db18ce13687407b38c38a79bcf/output/res/color/abc_secondary_text_material_light.xml"
     },
@@ -166,5 +219,9 @@
     {
         "merged": "/home/kirill/VK_hackathon/VK_hackathon/artoolkit6/Source/AR6J/AR6JProj/AR6J/build/intermediates/res/merged/androidTest/debug/color/abc_primary_text_disable_only_material_light.xml",
         "source": "/home/kirill/.android/build-cache/24a0abd81b8664db18ce13687407b38c38a79bcf/output/res/color/abc_primary_text_disable_only_material_light.xml"
+=======
+        "merged": "/Users/sabrina/Documents/VK_hackathonkir/artoolkit6/Source/AR6J/AR6JProj/AR6J/build/intermediates/res/merged/androidTest/debug/color/abc_tint_seek_thumb.xml",
+        "source": "/Users/sabrina/.android/build-cache/6382d95cd6976d56624eea2331add4075dd51018/output/res/color/abc_tint_seek_thumb.xml"
+>>>>>>> 658ec6212970dfc9dbba2a4af97a0aae6e55c4ed
     }
 ]

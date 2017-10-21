@@ -1,18 +1,19 @@
 [
     {
+<<<<<<< HEAD
         "merged": "/home/kirill/VK_hackathon/VK_hackathon/artoolkit6/Source/AR6J/AR6JProj/AR6J/build/intermediates/res/merged/androidTest/debug/color-v11/abc_background_cache_hint_selector_material_dark.xml",
         "source": "/home/kirill/.android/build-cache/24a0abd81b8664db18ce13687407b38c38a79bcf/output/res/color-v11/abc_background_cache_hint_selector_material_dark.xml"
     },
     {
         "merged": "/home/kirill/VK_hackathon/VK_hackathon/artoolkit6/Source/AR6J/AR6JProj/AR6J/build/intermediates/res/merged/androidTest/debug/color-v11/abc_background_cache_hint_selector_material_light.xml",
         "source": "/home/kirill/.android/build-cache/24a0abd81b8664db18ce13687407b38c38a79bcf/output/res/color-v11/abc_background_cache_hint_selector_material_light.xml"
-    },
-    {
-        "merged": "/Users/sabrina/Documents/VK_hackathon/artoolkit6/Source/AR6J/AR6JProj/AR6J/build/intermediates/res/merged/androidTest/debug/color-v11/abc_background_cache_hint_selector_material_light.xml",
-        "source": "/Users/sabrina/.android/build-cache/6382d95cd6976d56624eea2331add4075dd51018/output/res/color-v11/abc_background_cache_hint_selector_material_light.xml"
-    },
-    {
-        "merged": "/Users/sabrina/Documents/VK_hackathon/artoolkit6/Source/AR6J/AR6JProj/AR6J/build/intermediates/res/merged/androidTest/debug/color-v11/abc_background_cache_hint_selector_material_dark.xml",
+=======
+        "merged": "/Users/sabrina/Documents/VK_hackathonkir/artoolkit6/Source/AR6J/AR6JProj/AR6J/build/intermediates/res/merged/androidTest/debug/color-v11/abc_background_cache_hint_selector_material_dark.xml",
         "source": "/Users/sabrina/.android/build-cache/6382d95cd6976d56624eea2331add4075dd51018/output/res/color-v11/abc_background_cache_hint_selector_material_dark.xml"
+>>>>>>> 658ec6212970dfc9dbba2a4af97a0aae6e55c4ed
+    },
+    {
+        "merged": "/Users/sabrina/Documents/VK_hackathonkir/artoolkit6/Source/AR6J/AR6JProj/AR6J/build/intermediates/res/merged/androidTest/debug/color-v11/abc_background_cache_hint_selector_material_light.xml",
+        "source": "/Users/sabrina/.android/build-cache/6382d95cd6976d56624eea2331add4075dd51018/output/res/color-v11/abc_background_cache_hint_selector_material_light.xml"
     }
 ]
