@@ -39,6 +39,7 @@ public class Main {
             }
         } catch (Exception e){
             e.printStackTrace();
+            return "FAIL: " + strJson;
         }
 
         Color color = Graph.getColorById(0);

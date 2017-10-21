@@ -17,6 +17,28 @@ public class TestingServlet extends HttpServlet {
         out.println("<BODY>");
         out.println("Welcome to the Servlet Testing Center");
         out.println("Welcome to the Servlet Testing Center");
+        Color color = Graph.getColorById(0);
+        if (color != null){
+            out.println(color.getPeople().toString());
+        }
+        out.println("</BODY>");
+        out.println("</HTML>");
+    }
+
+    @Override
+    public void doPost(HttpServletRequest request,
+                       HttpServletResponse response)
+            throws IOException, ServletException
+    {
+
+        PrintWriter out = response.getWriter();
+        out.println("<HTML>");
+        out.println("<HEAD>");
+        out.println("<TITLE>Servlet Testing</TITLE>");
+        out.println("</HEAD>");
+        out.println("<BODY>");
+        out.println("Welcome to the Servlet Testing Center");
+        out.println("Welcome to the Servlet Testing Center");
         StringBuffer jb = new StringBuffer();
         String line = null;
         try {
@@ -29,14 +51,6 @@ public class TestingServlet extends HttpServlet {
         } catch (Exception e) { out.println("ERROR2"); }
         out.println("</BODY>");
         out.println("</HTML>");
-    }
-
-    @Override
-    public void doPost(HttpServletRequest request,
-                       HttpServletResponse response)
-            throws IOException, ServletException
-    {
-        doGet(request, response);
     }
 
 } 
