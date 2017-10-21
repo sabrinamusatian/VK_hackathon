@@ -10,11 +10,10 @@ public class SelectRoute extends HttpServlet {
             throws ServletException, IOException {
 
         PrintWriter out = response.getWriter();
+        String user_id = request.getParameter("user_id");
+        String pos = request.getParameter("pos");
 
-        // TODO: uncomment
-     //   String user_id = request.getParameter("user_id");
-    //    String pos = request.getParameter("pos");
-
+        // TODO: comment html
         List<Route> routes = UsersList.getPopularRoutes();
         out.println("<HTML>");
         out.println("<HEAD>");
@@ -60,18 +59,5 @@ public class SelectRoute extends HttpServlet {
 
         out.println("</BODY>");
         out.println("</HTML>");
-
-//        StringBuffer jb = new StringBuffer();
-//        String line = null;
-//        try {
-//            BufferedReader reader = request.getReader();
-//            while ((line = reader.readLine()) != null)
-//                jb.append(line);
-//        } catch (Exception e) { out.println("{\"action\" : \"ERROR1\""); }
-//        try {
-//            out.println(Main.onPost(jb.toString()));
-//        } catch (Exception e) { out.println("{\"action\" : \"ERROR2\""); }
-
-
     }
 } 

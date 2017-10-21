@@ -5,9 +5,12 @@ public class User {
     private Route userRoute;
     private Integer pos = 0;
 
-    public User(Integer id, Route route){
+    public User(Integer id){
         this.id = id;
-        this.userRoute = route;
+    }
+
+    public void setUserRoute(Route userRoute) {
+        this.userRoute = userRoute;
     }
 
     public VertexColor next(){
@@ -30,5 +33,9 @@ public class User {
 
     public Integer getId() {
         return id;
+    }
+
+    public Route getUserRoute() {
+        return userRoute;
     }
 }
