@@ -36,4 +36,8 @@ public class Color {
     public void setPeople(Integer people) {
         this.people = people;
     }
+
+    public List<Vertex> getVertexes() {
+        return vertexes;
+    }
 }

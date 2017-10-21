@@ -40,6 +40,21 @@ public class Graph {
         return null;
     }
 
+    public static Color getColorByName(String name){
+        if (!isInited){
+            Graph.initGraph();
+        }
+        for (Color color: graph){
+            List<Vertex> vertexes = color.getVertexes();
+            for (Vertex ver: vertexes){
+                if (ver.getName().equals(name)){
+                    return color;
+                }
+            }
+        }
+        return null;
+    }
+
     public static List<Color> getGraph() {
         if (!isInited){
             Graph.initGraph();
