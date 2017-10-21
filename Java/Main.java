@@ -51,16 +51,16 @@ public class Main {
 
     public static void main(String[] args) {
         Graph.initGraph();
-
-        User user = new User(0);
-
-        while (true){
-            VertexColor vertexColor = user.next();
-            Integer returnCode = parseVertexColor(vertexColor);
-            if (returnCode == 2){
-                break;
-            }
-    }
+//
+//        User user = new User(0);
+//
+//        while (true){
+//            VertexColor vertexColor = user.next();
+//            Integer returnCode = parseVertexColor(vertexColor);
+//            if (returnCode == 2){
+//                break;
+//            }
+//    }
 
     String json = "[{\"mac\" :  \"MACMACMAC\", \"power\" : \"-65\"}, {\"mac\" :  \"FUCKFUCKFUCK\", \"power\" : \"-63\"}]";
         onPost(json);

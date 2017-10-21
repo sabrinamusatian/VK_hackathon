@@ -41,6 +41,9 @@ public class Graph {
     }
 
     public static List<Color> getGraph() {
+        if (!isInited){
+            Graph.initGraph();
+        }
         return graph;
     }
 
