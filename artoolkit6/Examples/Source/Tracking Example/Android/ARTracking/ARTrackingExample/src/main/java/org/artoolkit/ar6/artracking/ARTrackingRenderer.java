@@ -36,8 +36,8 @@ class ARTrackingRenderer extends ARRenderer {
     };
     private int trackableUIDs[] = new int[trackables.length];
     
-    private Cube cube;
-
+    private Cat cube;
+    private RightArrow rArrow;
     /**
      * Markers can be configured here.
      */
@@ -58,8 +58,10 @@ class ARTrackingRenderer extends ARRenderer {
     @Override
     public void onSurfaceCreated(GL10 unused, EGLConfig config) {
         this.shaderProgram = new SimpleShaderProgram(new SimpleVertexShader(), new SimpleFragmentShader());
-        cube = new Cube(40.0f, 0.0f, 0.0f, 0.0f);
+        cube = new Cat(15.0f, 30.0f, -30.0f, 0.0f);
         cube.setShaderProgram(shaderProgram);
+        rArrow = new RightArrow(5.0f, 30.0f, -30.0f, 0.0f);
+        rArrow.setShaderProgram(shaderProgram);
         super.onSurfaceCreated(unused, config);
     }
 
@@ -80,7 +82,11 @@ class ARTrackingRenderer extends ARRenderer {
             if (ARToolKit.getInstance().queryMarkerVisible(trackableUID)) {
                 float[] projectionMatrix = ARToolKit.getInstance().getProjectionMatrix();
                 float[] modelViewMatrix = ARToolKit.getInstance().queryMarkerTransformation(trackableUID);
-                cube.draw(projectionMatrix, modelViewMatrix);
+                if (cube.it > 80) {
+                    rArrow.draw(projectionMatrix, modelViewMatrix);
+                } else {
+                    cube.draw(projectionMatrix, modelViewMatrix);
+                }
             }
         }
     }

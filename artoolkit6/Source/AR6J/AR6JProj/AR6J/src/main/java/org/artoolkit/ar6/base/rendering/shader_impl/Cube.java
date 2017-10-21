@@ -41,8 +41,7 @@ public class Cube implements ARDrawable {
     private FloatBuffer mColorBuffer;
     private ByteBuffer mIndexBuffer;
     private ShaderProgram shaderProgram;
-    private int it = 0;
-    private float mx, my, mz, msize;
+
     @SuppressWarnings("unused")
     public Cube() {
         this(1.0f);
@@ -54,10 +53,6 @@ public class Cube implements ARDrawable {
     }
 
     public Cube(float size, float x, float y, float z) {
-        mx = x;
-        my = y;
-        mz = z;
-        msize = size;
         setArrays(size, x, y, z);
     }
 
@@ -83,7 +78,6 @@ public class Cube implements ARDrawable {
     private void setArrays(float size, float x, float y, float z) {
 
         float hs = size / 2.0f;
-
         /*
         In the marker coordinate system z points from the marker up. x goes to the right and y to the top
          */
@@ -91,54 +85,45 @@ public class Cube implements ARDrawable {
                 x - hs, y - hs, z - hs, // 0 --> If you look at the cube from the front, this is the corner
                 // in the front on the left of the ground plane.
                 x + hs, y - hs, z - hs, // 1 --> That is the one to the right of corner 0
-                //x + hs, y + hs, z - hs, // 2 --> That is the one to the back right of corner 0
+                x + hs, y + hs, z - hs, // 2 --> That is the one to the back right of corner 0
                 x - hs, y + hs, z - hs, // 3 --> That is the one to the left of corner 2
                 // Or if you imaging (or paint) a 3D cube on paper this is the only corner that is hidden
                 x - hs, y - hs, z + hs, // 4 --> That is the top left corner. Directly on top of 0
                 x + hs, y - hs, z + hs, // 5 --> That is directly on top of 1
-                //x + hs, y + hs, z + hs, // 6 --> That is directly on top of 2
+                x + hs, y + hs, z + hs, // 6 --> That is directly on top of 2
                 x - hs, y + hs, z + hs, // 7 --> That is directly on top of 3
         };
         float c = 1.0f;
         float colors[] = {
-                c, c, c, c, // 0 black
-                c, c, c, c, // 1 red
-                c, c, c, c, // 2 yellow
-                c, c, c, c, // 3 green
-                c, c, c, c, // 4 blue
-                c, c, c, c, // 5 magenta
-                //c, c, c, c, // 6 white
-                //c, c, c, c, // 7 cyan
+                0, 0, 0, c, // 0 black
+                c, 0, 0, c, // 1 red
+                c, c, 0, c, // 2 yellow
+                0, c, 0, c, // 3 green
+                0, 0, c, c, // 4 blue
+                c, 0, c, c, // 5 magenta
+                c, c, c, c, // 6 white
+                0, c, c, c, // 7 cyan
         };
 
         byte indices[] = {
-//                // bottom
-//                1, 0, 2,
-//                2, 0, 3,
-//                // right
-//                1, 2, 5,
-//                5, 2, 6,
-//                // top
-//                4, 5, 7,
-//                7, 5, 6,
-//                // left
-//                0, 4, 3,
-//                3, 4, 7,
-//                // back
-//                7, 6, 3,
-//                6, 2, 3,
-//                // front
-//                0, 1, 4,
-//                4, 1, 5
-                  0, 1, 2,
-//                3, 4, 5,
-//                0, 3, 5,
-//                0, 2, 5,
-//                0, 3, 4,
-//                0, 1, 4,
-//                1, 4, 5,
-//                1, 2, 5,
-
+                // bottom
+                1, 0, 2,
+                2, 0, 3,
+                // right
+                1, 2, 5,
+                5, 2, 6,
+                // top
+                4, 5, 7,
+                7, 5, 6,
+                // left
+                0, 4, 3,
+                3, 4, 7,
+                // back
+                7, 6, 3,
+                6, 2, 3,
+                // front
+                0, 1, 4,
+                4, 1, 5
         };
 
         mVertexBuffer = RenderUtils.buildFloatBuffer(vertices);
@@ -156,39 +141,6 @@ public class Cube implements ARDrawable {
      */
     public void draw(float[] projectionMatrix, float[] modelViewMatrix) {
 
-        float c = 1.0f;
-
-        it++;
-        float colors[] = {
-                0, c, c, c, // 0 black
-                0, c, c, c, // 1 red
-                0, c, c, c, // 2 yellow
-                0, c, c, c, // 3 green
-                0, c, c, c, // 4 blue
-                0, c, c, c, // 5 magenta
-                //c, c, c, c, // 6 white
-                //c, c, c, c, // 7 cyan
-        };
-        float x, y, z, hs;
-        x = mx + it;
-        y = my;
-        z = mz;
-        hs = msize / 2;
-        float vertices[] = {
-                x - hs, y - hs, z - hs, // 0 --> If you look at the cube from the front, this is the corner
-                // in the front on the left of the ground plane.
-                x + hs, y - hs, z - hs, // 1 --> That is the one to the right of corner 0
-                //x + hs, y + hs, z - hs, // 2 --> That is the one to the back right of corner 0
-                x - hs, y + hs, z - hs, // 3 --> That is the one to the left of corner 2
-                // Or if you imaging (or paint) a 3D cube on paper this is the only corner that is hidden
-                x - hs, y - hs, z + hs, // 4 --> That is the top left corner. Directly on top of 0
-                x + hs, y - hs, z + hs, // 5 --> That is directly on top of 1
-                //x + hs, y + hs, z + hs, // 6 --> That is directly on top of 2
-                x - hs, y + hs, z + hs, // 7 --> That is directly on top of 3
-        };
-
-        mColorBuffer = RenderUtils.buildFloatBuffer(colors);
-        mVertexBuffer = RenderUtils.buildFloatBuffer(vertices);
         shaderProgram.setProjectionMatrix(projectionMatrix);
         shaderProgram.setModelViewMatrix(modelViewMatrix);
 
