@@ -20,15 +20,6 @@ public class NextVer extends HttpServlet {
             throws ServletException, IOException {
         PrintWriter out = response.getWriter();
 
-        // TODO: comment html
-
-        out.println("<HTML>");
-        out.println("<HEAD>");
-        out.println("<TITLE>Servlet Testing</TITLE>");
-        out.println("</HEAD>");
-        out.println("<BODY>");
-
-
         try{
             String user_id = request.getParameter("user_id");
 
@@ -41,8 +32,5 @@ public class NextVer extends HttpServlet {
         } catch (Exception e){ // TODO: catch null
             out.println(e.getMessage());
         }
-
-        out.println("</BODY>");
-        out.println("</HTML>");
     }
 } 

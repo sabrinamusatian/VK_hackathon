@@ -14,12 +14,6 @@ public class UserChoose extends HttpServlet {
         String user_id = request.getParameter("user_id");
         String route = request.getParameter("route");
 
-        //TODO: comment
-        out.println("<HTML>");
-        out.println("<HEAD>");
-        out.println("<TITLE>Servlet Testing</TITLE>");
-        out.println("</HEAD>");
-        out.println("<BODY>");
 
         User user = UsersList.userChoose(user_id, route);
         out.println(user.getId().toString());
@@ -28,8 +22,5 @@ public class UserChoose extends HttpServlet {
         } else {
             out.println("ROUTE IS NULL");
         }
-
-        out.println("</BODY>");
-        out.println("</HTML>");
     }
 } 

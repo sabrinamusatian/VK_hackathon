@@ -10,16 +10,13 @@ public class SelectRoute extends HttpServlet {
             throws ServletException, IOException {
 
         PrintWriter out = response.getWriter();
+        response.setContentType("application/json");
+        response.setCharacterEncoding("utf-8");
         String user_id = request.getParameter("user_id");
         String pos = request.getParameter("pos");
 
         // TODO: comment html
         List<Route> routes = UsersList.getPopularRoutes();
-        out.println("<HTML>");
-        out.println("<HEAD>");
-        out.println("<TITLE>Servlet Testing</TITLE>");
-        out.println("</HEAD>");
-        out.println("<BODY>");
 
         String json = "[";
 
@@ -32,7 +29,7 @@ public class SelectRoute extends HttpServlet {
             List<ColorRoute> colorRoutes = route.getRoute();
             for (int j = 0; j < colorRoutes.size(); j++){
                 ColorRoute cr = colorRoutes.get(j);
-                json += "\"color\": ";
+                json += "{\"color\": ";
                 json += cr.getColor().getId().toString();
                 json += ", \"vertexes\": [";
 
@@ -43,7 +40,7 @@ public class SelectRoute extends HttpServlet {
                         json += ", ";
                     }
                 }
-                json += "]";
+                json += "]}";
                 if (j != colorRoutes.size() - 1) {
                     json += ", ";
                 }
@@ -56,8 +53,5 @@ public class SelectRoute extends HttpServlet {
         }
         json += "]";
         out.println(json);
-
-        out.println("</BODY>");
-        out.println("</HTML>");
     }
 } 

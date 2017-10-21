@@ -11,14 +11,6 @@ public class GetColor extends HttpServlet {
 
         PrintWriter out = response.getWriter();
         String color = request.getParameter("color");
-
-        // TODO: comment html
-        out.println("<HTML>");
-        out.println("<HEAD>");
-        out.println("<TITLE>Servlet Testing</TITLE>");
-        out.println("</HEAD>");
-        out.println("<BODY>");
-
         Color col = Graph.getColorByName(color);
         String json;
         if (col != null) {
@@ -28,8 +20,5 @@ public class GetColor extends HttpServlet {
         }
 
         out.println(json);
-
-        out.println("</BODY>");
-        out.println("</HTML>");
     }
 } 

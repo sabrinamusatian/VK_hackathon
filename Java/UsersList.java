@@ -1,16 +1,17 @@
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
-import java.util.zip.Inflater;
 
 public class UsersList {
     private static List<User> users = new ArrayList<>();
     private static List<Route> routes = new ArrayList<>();
+    private static List<String> names = Arrays.asList("Итальянская живопись", "Голландская живопись", "Древности сибири", "Избранная экскурсия", "Древний Египет");
 
-    private static final int numberRoutes = 10;
+    private static final int numberRoutes = names.size();
 
     public static void initRoutes(){
         for (int i = 0; i < numberRoutes; i++){
-            routes.add(new Route("Desc"));
+            routes.add(new Route(names.get(i)));
         }
     }
 
