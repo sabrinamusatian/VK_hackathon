@@ -19,6 +19,19 @@
             android:layout_height="wrap_content"
             android:id="@+id/map_button"
             android:text="map"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/buttonTest"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/buttonTestNext"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="8"
+            android:id="@+id/textTest"/>
     </LinearLayout>
 
 </android.support.constraint.ConstraintLayout>
