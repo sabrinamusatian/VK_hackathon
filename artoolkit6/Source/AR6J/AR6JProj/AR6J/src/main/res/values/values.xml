@@ -7,7 +7,7 @@
     <color name="highlight_artk_light_trans">#66009CA7</color>
     <color name="background_artk_light">#d0d0ce</color>
     <color name="colorInfo_artk_light">#FFDA00</color>
-    <color name="error_artk_light">#FB3448</color>
+    <color name="error_artk_light">#fb3448</color>
     <color name="primary_text_default_material_light">#de000000</color>
     <color name="artk_light_transparent">#00000000</color>
 </resources>

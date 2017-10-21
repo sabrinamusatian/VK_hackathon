@@ -1,7 +1,11 @@
 package org.artoolkit.ar6.artracking;
 
+import android.app.Activity;
+import android.content.Context;
+import android.content.Intent;
 import android.opengl.GLES20;
 
+import org.artoolkit.ar6.base.ARActivity;
 import org.artoolkit.ar6.base.ARToolKit;
 import org.artoolkit.ar6.base.NativeInterface;
 import org.artoolkit.ar6.base.rendering.ARRenderer;
@@ -18,6 +22,11 @@ import javax.microedition.khronos.opengles.GL10;
  */
 class ARTrackingRenderer extends ARRenderer {
 
+    Activity mContext;
+    ARTrackingRenderer(Activity context){
+        super();
+        mContext = context;
+    }
     private static final class Trackable {
         String name;
         float height;
@@ -76,18 +85,24 @@ class ARTrackingRenderer extends ARRenderer {
         GLES20.glEnable(GLES20.GL_DEPTH_TEST);
         GLES20.glFrontFace(GLES20.GL_CCW);
 
-        // Look for trackables, and draw on each found one.
-        for (int trackableUID : trackableUIDs) {
-            // If the marker is visible, apply its transformation, and render a cube
-            if (ARToolKit.getInstance().queryMarkerVisible(trackableUID)) {
-                float[] projectionMatrix = ARToolKit.getInstance().getProjectionMatrix();
-                float[] modelViewMatrix = ARToolKit.getInstance().queryMarkerTransformation(trackableUID);
-                if (cube.it > 80) {
-                    rArrow.draw(projectionMatrix, modelViewMatrix);
-                } else {
-                    cube.draw(projectionMatrix, modelViewMatrix);
-                }
+        if (ARToolKit.getInstance().queryMarkerVisible(trackableUIDs[4])) {
+            float[] projectionMatrix = ARToolKit.getInstance().getProjectionMatrix();
+            float[] modelViewMatrix = ARToolKit.getInstance().queryMarkerTransformation(trackableUIDs[4]);
+            if (cube.it > 80) {
+                rArrow.draw(projectionMatrix, modelViewMatrix);
+            } else {
+                cube.draw(projectionMatrix, modelViewMatrix);
             }
+        } else if (ARToolKit.getInstance().queryMarkerVisible(trackableUIDs[3])) {
+            mContext.runOnUiThread(new Runnable() {
+                @Override
+                public void run() {
+                    Intent intent = new Intent(mContext, map.class);
+                    intent.putExtra("hall", 2);  // TODO
+                    mContext.startActivity(intent);
+                }
+            });
+
         }
     }
 }

@@ -43,8 +43,12 @@ dependencies {
     // comment-out the line above.
     compile 'com.android.support:appcompat-v7:25.3.1'
     compile 'com.android.support.constraint:constraint-layout:1.0.2'
+<<<<<<< HEAD
     compile 'com.android.support:recyclerview-v7:25.3.1'
     compile 'com.android.support:support-v4:25.3.1'
+=======
+    compile 'com.android.support:design:25.3.1'
+>>>>>>> 7423267b17c8347385c301fd4c4bc37c0e24504d
 }
 
 // Task Actions is defined by task type of Copy. To reference a variable within a string, the string has to be delimited by " rather than '.

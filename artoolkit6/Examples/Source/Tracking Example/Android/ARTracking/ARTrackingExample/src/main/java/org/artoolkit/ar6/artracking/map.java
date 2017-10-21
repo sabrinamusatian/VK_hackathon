@@ -9,14 +9,18 @@ import android.graphics.Color;
 import android.graphics.Paint;
 import android.graphics.Path;
 import android.graphics.Point;
+import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Display;
+import android.view.View;
 import android.widget.ImageView;
 
 import static android.R.attr.path;
 
 public class map extends Activity {
+    private FloatingActionButton left;
+    private FloatingActionButton right;
 
     private void drawCircle(int x, int y, Canvas toDraw) {
         Paint paint = new Paint();
@@ -150,5 +154,25 @@ public class map extends Activity {
         imgView.setAdjustViewBounds(true);
         imgView.setImageBitmap(mutableBitmap);
 
+        left = (FloatingActionButton) findViewById(R.id.floatingActionButton);
+        left.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(map.this, ARTrackingActivity.class);
+                intent.putExtra("AR", 2); // TODO
+                startActivity(intent);
+            }
+        });
+
+
+        right = (FloatingActionButton) findViewById(R.id.floatingActionButtonRight);
+        right.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(map.this, ARTrackingActivity.class);
+                intent.putExtra("AR", 1);  // TODO
+                startActivity(intent);
+            }
+        });
     }
 }

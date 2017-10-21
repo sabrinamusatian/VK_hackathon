@@ -52,9 +52,14 @@
             android:name=".ARTrackingActivity"
             android:configChanges="keyboardHidden|orientation|screenSize"
             android:label="@string/app_name" />
+<<<<<<< HEAD
         <activity android:name=".map" />
         <activity android:name=".SelectActivity"
             android:theme="@style/Theme.AppCompat.Light"></activity>
+=======
+        <activity android:name=".map"
+            android:theme="@style/Theme.AppCompat.Light" ></activity>
+>>>>>>> 7423267b17c8347385c301fd4c4bc37c0e24504d
     </application>
 
 </manifest>
