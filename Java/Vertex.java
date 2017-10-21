@@ -1,8 +1,3 @@
-import java.util.List;
-
-/**
- * Created by lkolt on 20.10.2017.
- */
 public class Vertex {
     private Integer id;
     private String name;

@@ -2,11 +2,11 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
-
 public class Color {
     private List<Vertex> vertexes;
     private Integer id;
     private Random random = new Random();
+    private Integer people = 0;
 
     public Color(Integer id, List<Vertex> vertexes) {
         this.id = id;
@@ -27,5 +27,13 @@ public class Color {
 
     public Integer getId() {
         return id;
+    }
+
+    public Integer getPeople() {
+        return people;
+    }
+
+    public void setPeople(Integer people) {
+        this.people = people;
     }
 }

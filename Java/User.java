@@ -1,6 +1,4 @@
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Random;
+import java.util.*;
 
 public class User {
     private Integer id;
@@ -10,8 +8,12 @@ public class User {
     public User(Integer id){
         this.id = id;
 
-        for (int i = 0; i < Graph.numberColors; i++){
-            ColorRoute colorRoute = new ColorRoute(i);
+        List<Color> colors = Graph.getGraph();
+
+        Collections.sort(colors, (lhs, rhs) -> lhs.getPeople() < rhs.getPeople() ? -1 : (lhs.getPeople() > rhs.getPeople()) ? 1 : 0);
+
+        for (int i = 0; i < colors.size(); i++){
+            ColorRoute colorRoute = new ColorRoute(colors.get(i).getId());
             route.add(colorRoute);
         }
     }
@@ -31,5 +33,9 @@ public class User {
             }
         }
         return new VertexColor();
+    }
+
+    public Integer getId() {
+        return id;
     }
 }

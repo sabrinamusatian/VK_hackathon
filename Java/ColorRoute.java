@@ -6,7 +6,7 @@ public class ColorRoute {
     private int pos = 0;
 
     ColorRoute(Integer id){
-        Color color = Graph.getColor(id);
+        Color color = Graph.getColorById(id);
 
         route = color.generateRoute();
         this.color = color;
