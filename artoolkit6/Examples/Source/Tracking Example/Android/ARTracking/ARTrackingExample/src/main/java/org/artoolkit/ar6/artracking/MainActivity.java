@@ -20,9 +20,22 @@ public class MainActivity extends Activity {
                 runAR();
             }
         });
+        Button map = (Button) findViewById(R.id.map_button);
+        map.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                runMap();
+            }
+        });
     }
 
     private void runAR() {
         startActivity(new Intent(MainActivity.this, ARTrackingActivity.class));
     }
+
+    private void runMap() {
+        startActivity(new Intent(MainActivity.this, map.class));
+    }
+
+
 }
