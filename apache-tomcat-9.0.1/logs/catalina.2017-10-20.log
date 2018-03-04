@@ -1,0 +1,84 @@
+20-Oct-2017 11:18:55.325 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version:        Apache Tomcat/9.0.1
+20-Oct-2017 11:18:55.700 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Sep 27 2017 17:31:52 UTC
+20-Oct-2017 11:18:55.700 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server number:         9.0.1.0
+20-Oct-2017 11:18:55.700 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 10
+20-Oct-2017 11:18:55.701 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+20-Oct-2017 11:18:55.701 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+20-Oct-2017 11:18:55.701 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files\Java\jdk1.8.0_131\jre
+20-Oct-2017 11:18:55.702 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_131-b11
+20-Oct-2017 11:18:55.702 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+20-Oct-2017 11:18:55.702 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         C:\Users\lkolt\Downloads\apache-tomcat-9.0.1-windows-x64\apache-tomcat-9.0.1
+20-Oct-2017 11:18:55.702 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         C:\Users\lkolt\Downloads\apache-tomcat-9.0.1-windows-x64\apache-tomcat-9.0.1
+20-Oct-2017 11:18:55.703 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=C:\Users\lkolt\Downloads\apache-tomcat-9.0.1-windows-x64\apache-tomcat-9.0.1\conf\logging.properties
+20-Oct-2017 11:18:55.708 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+20-Oct-2017 11:18:55.709 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+20-Oct-2017 11:18:55.712 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+20-Oct-2017 11:18:55.713 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=C:\Users\lkolt\Downloads\apache-tomcat-9.0.1-windows-x64\apache-tomcat-9.0.1
+20-Oct-2017 11:18:55.714 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=C:\Users\lkolt\Downloads\apache-tomcat-9.0.1-windows-x64\apache-tomcat-9.0.1
+20-Oct-2017 11:18:55.715 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=C:\Users\lkolt\Downloads\apache-tomcat-9.0.1-windows-x64\apache-tomcat-9.0.1\temp
+20-Oct-2017 11:18:55.716 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Loaded APR based Apache Tomcat Native library [1.2.14] using APR version [1.6.2].
+20-Oct-2017 11:18:55.717 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+20-Oct-2017 11:18:55.718 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+20-Oct-2017 11:18:56.985 INFO [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL successfully initialized [OpenSSL 1.0.2l  25 May 2017]
+20-Oct-2017 11:18:59.391 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+20-Oct-2017 11:19:00.396 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+20-Oct-2017 11:19:00.551 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8009"]
+20-Oct-2017 11:19:00.570 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+20-Oct-2017 11:19:00.575 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 8110 ms
+20-Oct-2017 11:19:01.121 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+20-Oct-2017 11:19:01.124 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/9.0.1
+20-Oct-2017 11:19:01.159 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\lkolt\Downloads\apache-tomcat-9.0.1-windows-x64\apache-tomcat-9.0.1\webapps\docs]
+20-Oct-2017 11:19:02.939 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\lkolt\Downloads\apache-tomcat-9.0.1-windows-x64\apache-tomcat-9.0.1\webapps\docs] has finished in [1,760] ms
+20-Oct-2017 11:19:02.941 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\lkolt\Downloads\apache-tomcat-9.0.1-windows-x64\apache-tomcat-9.0.1\webapps\examples]
+20-Oct-2017 11:19:04.964 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\lkolt\Downloads\apache-tomcat-9.0.1-windows-x64\apache-tomcat-9.0.1\webapps\examples] has finished in [2,022] ms
+20-Oct-2017 11:19:05.003 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\lkolt\Downloads\apache-tomcat-9.0.1-windows-x64\apache-tomcat-9.0.1\webapps\host-manager]
+20-Oct-2017 11:19:05.215 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\lkolt\Downloads\apache-tomcat-9.0.1-windows-x64\apache-tomcat-9.0.1\webapps\host-manager] has finished in [212] ms
+20-Oct-2017 11:19:05.226 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\lkolt\Downloads\apache-tomcat-9.0.1-windows-x64\apache-tomcat-9.0.1\webapps\manager]
+20-Oct-2017 11:19:05.379 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\lkolt\Downloads\apache-tomcat-9.0.1-windows-x64\apache-tomcat-9.0.1\webapps\manager] has finished in [152] ms
+20-Oct-2017 11:19:05.384 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\lkolt\Downloads\apache-tomcat-9.0.1-windows-x64\apache-tomcat-9.0.1\webapps\ROOT]
+20-Oct-2017 11:19:05.528 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\lkolt\Downloads\apache-tomcat-9.0.1-windows-x64\apache-tomcat-9.0.1\webapps\ROOT] has finished in [142] ms
+20-Oct-2017 11:19:05.580 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+20-Oct-2017 11:19:05.604 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-nio-8009"]
+20-Oct-2017 11:19:05.612 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 5035 ms
+20-Oct-2017 17:27:01.713 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version:        Apache Tomcat/9.0.1
+20-Oct-2017 17:27:01.805 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Sep 27 2017 17:31:52 UTC
+20-Oct-2017 17:27:01.805 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server number:         9.0.1.0
+20-Oct-2017 17:27:01.806 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 10
+20-Oct-2017 17:27:01.806 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+20-Oct-2017 17:27:01.806 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+20-Oct-2017 17:27:01.806 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files\Java\jdk1.8.0_131\jre
+20-Oct-2017 17:27:01.807 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_131-b11
+20-Oct-2017 17:27:01.807 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+20-Oct-2017 17:27:01.807 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         C:\Users\lkolt\Downloads\apache-tomcat-9.0.1-windows-x64\apache-tomcat-9.0.1
+20-Oct-2017 17:27:01.807 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         C:\Users\lkolt\Downloads\apache-tomcat-9.0.1-windows-x64\apache-tomcat-9.0.1
+20-Oct-2017 17:27:01.808 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=C:\Users\lkolt\Downloads\apache-tomcat-9.0.1-windows-x64\apache-tomcat-9.0.1\conf\logging.properties
+20-Oct-2017 17:27:01.812 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+20-Oct-2017 17:27:01.813 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+20-Oct-2017 17:27:01.814 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+20-Oct-2017 17:27:01.817 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=C:\Users\lkolt\Downloads\apache-tomcat-9.0.1-windows-x64\apache-tomcat-9.0.1
+20-Oct-2017 17:27:01.817 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=C:\Users\lkolt\Downloads\apache-tomcat-9.0.1-windows-x64\apache-tomcat-9.0.1
+20-Oct-2017 17:27:01.818 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=C:\Users\lkolt\Downloads\apache-tomcat-9.0.1-windows-x64\apache-tomcat-9.0.1\temp
+20-Oct-2017 17:27:01.819 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Loaded APR based Apache Tomcat Native library [1.2.14] using APR version [1.6.2].
+20-Oct-2017 17:27:01.819 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+20-Oct-2017 17:27:01.820 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+20-Oct-2017 17:27:03.060 INFO [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL successfully initialized [OpenSSL 1.0.2l  25 May 2017]
+20-Oct-2017 17:27:05.426 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+20-Oct-2017 17:27:05.955 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+20-Oct-2017 17:27:06.008 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8009"]
+20-Oct-2017 17:27:06.015 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+20-Oct-2017 17:27:06.017 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 7560 ms
+20-Oct-2017 17:27:06.182 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+20-Oct-2017 17:27:06.184 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/9.0.1
+20-Oct-2017 17:27:06.244 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\lkolt\Downloads\apache-tomcat-9.0.1-windows-x64\apache-tomcat-9.0.1\webapps\docs]
+20-Oct-2017 17:27:08.387 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\lkolt\Downloads\apache-tomcat-9.0.1-windows-x64\apache-tomcat-9.0.1\webapps\docs] has finished in [2,134] ms
+20-Oct-2017 17:27:08.391 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\lkolt\Downloads\apache-tomcat-9.0.1-windows-x64\apache-tomcat-9.0.1\webapps\examples]
+20-Oct-2017 17:27:12.941 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\lkolt\Downloads\apache-tomcat-9.0.1-windows-x64\apache-tomcat-9.0.1\webapps\examples] has finished in [4,551] ms
+20-Oct-2017 17:27:12.942 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\lkolt\Downloads\apache-tomcat-9.0.1-windows-x64\apache-tomcat-9.0.1\webapps\host-manager]
+20-Oct-2017 17:27:13.142 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\lkolt\Downloads\apache-tomcat-9.0.1-windows-x64\apache-tomcat-9.0.1\webapps\host-manager] has finished in [200] ms
+20-Oct-2017 17:27:13.151 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\lkolt\Downloads\apache-tomcat-9.0.1-windows-x64\apache-tomcat-9.0.1\webapps\manager]
+20-Oct-2017 17:27:13.326 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\lkolt\Downloads\apache-tomcat-9.0.1-windows-x64\apache-tomcat-9.0.1\webapps\manager] has finished in [175] ms
+20-Oct-2017 17:27:13.337 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\lkolt\Downloads\apache-tomcat-9.0.1-windows-x64\apache-tomcat-9.0.1\webapps\ROOT]
+20-Oct-2017 17:27:13.471 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\lkolt\Downloads\apache-tomcat-9.0.1-windows-x64\apache-tomcat-9.0.1\webapps\ROOT] has finished in [134] ms
+20-Oct-2017 17:27:13.478 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+20-Oct-2017 17:27:13.515 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-nio-8009"]
+20-Oct-2017 17:27:13.528 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 7509 ms

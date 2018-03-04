@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="ISO-8859-1"?> 
+<!DOCTYPE web-app 
+  PUBLIC "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN" 
+  "http://java.sun.com/dtd/web-app_2_3.dtd"> 
+<web-app> 
+  <servlet> 
+    <servlet-name>TestingServlet</servlet-name> 
+    <servlet-class>TestingServlet</servlet-class> 
+  </servlet> 
+  <servlet-mapping> 
+    <servlet-name>TestingServlet</servlet-name> 
+    <url-pattern>/test</url-pattern> 
+  </servlet-mapping> 
+  
+    <servlet> 
+    <servlet-name>SelectRoute</servlet-name> 
+    <servlet-class>SelectRoute</servlet-class> 
+  </servlet> 
+  <servlet-mapping> 
+    <servlet-name>SelectRoute</servlet-name> 
+    <url-pattern>/selectroute</url-pattern> 
+	<page-encoding>UTF-8</page-encoding>
+  </servlet-mapping> 
+  
+      <servlet> 
+    <servlet-name>UserChoose</servlet-name> 
+    <servlet-class>UserChoose</servlet-class> 
+  </servlet> 
+  <servlet-mapping> 
+    <servlet-name>UserChoose</servlet-name> 
+    <url-pattern>/userchoose</url-pattern> 
+  </servlet-mapping> 
+  
+        <servlet> 
+    <servlet-name>NextVer</servlet-name> 
+    <servlet-class>NextVer</servlet-class> 
+  </servlet> 
+  <servlet-mapping> 
+    <servlet-name>NextVer</servlet-name> 
+    <url-pattern>/nextver</url-pattern> 
+  </servlet-mapping> 
+  
+        <servlet> 
+    <servlet-name>GetColor</servlet-name> 
+    <servlet-class>GetColor</servlet-class> 
+  </servlet> 
+  <servlet-mapping> 
+    <servlet-name>GetColor</servlet-name> 
+    <url-pattern>/getcolor</url-pattern> 
+  </servlet-mapping>   
+  
+  <dependency> <groupId>org.json</groupId> <artifactId>json</artifactId> <version>20131018</version> </dependency>
+</web-app> 

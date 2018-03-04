@@ -1,5 +1,6 @@
 package org.artoolkit.ar6.artracking;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.widget.FrameLayout;
 
@@ -13,7 +14,10 @@ public class ARTrackingActivity extends ARActivity {
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState); //Calls ARActivity's ctor, abstract class of AR6J
+        super.onCreate(savedInstanceState); //Calls A/RActivity's ctor, abstract class of AR6J
+
+        Intent intent = getIntent();
+        int act = intent.getIntExtra("AR", -1);
         setContentView(R.layout.main);
     }
 
@@ -22,7 +26,7 @@ public class ARTrackingActivity extends ARActivity {
      */
     @Override
     protected ARRenderer supplyRenderer() {
-        return new ARTrackingRenderer();
+        return new ARTrackingRenderer(this);
     }
 
     /**
